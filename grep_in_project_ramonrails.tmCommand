@@ -126,7 +126,7 @@ puts &lt;&lt;-HTML
 HTML
 
 # TODO: Respect ENV['TM_SELECTED_FILES']
-command = %{cd "#{directory}"; find . \\( -path '*/.svn' -or -path '*/.git' -or -path '*/vendor/rails' \\) -prune -or -type f -print0 | xargs -0 grep -nr --ignore-case --fixed-strings --exclude='*.log' --exclude='*.sqlite3' #{e_sh query}}
+command = %{cd "#{directory}"; find . \\( -path '*/.svn' -or -path '*/.git' -or -path '*/images' -or -path '*/vendor/rails' \\) -prune -or -type f -print0 | xargs -0 grep -nr --ignore-case --fixed-strings --exclude='*.log' --exclude='*.sqlite3' #{e_sh query}}
 
 IO.popen(command) do |pipe|
 
