@@ -1,0 +1,8 @@
+# By Henrik Nyh &lt;http://henrik.nyh.se&gt; 2007-06-26
+# Free to modify and redistribute with credit.
+#
+# changes by ramonrails
+#   added .git to ignore list
+#   window opens at 450x350 or as resized by user
+#   excluded sqlite3
+#   added 'ramonrails' in the name to keep it separate from original version
